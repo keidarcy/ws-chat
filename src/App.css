@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -14,14 +14,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
@@ -39,4 +31,151 @@
 
 button {
   font-size: calc(10px + 2vmin);
+} */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+button {
+  font-family: 'Open Sans', sans-serif;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: background 400ms;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  outline: 0;
+  border: 0;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.page {
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  );
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.chat {
+  width: 60%;
+  height: 80vh;
+  background-color: aliceblue;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.chat-btn {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background-color: #ff605c;
+  top: 2%;
+  left: 15px;
+  border-radius: 100%;
+}
+.chat-btn.yellow {
+  background-color: #ffbd44;
+  left: 40px;
+}
+.chat-btn.green {
+  background-color: #00ca4e;
+  left: 65px;
+}
+
+.chat-current {
+  position: absolute;
+  top: 0;
+  right: 5%;
+  display: flex;
+  color: #3f0e40;
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.6em;
+  align-items: center;
+  width: 100px;
+  height: 50px;
+}
+.chat_status {
+  width: 15px;
+  height: 15px;
+  background-color: #777;
+  border-radius: 100%;
+}
+
+.chat_status.active {
+  background-color: #2bac76;
+}
+
+.chat-sidebar {
+  background-color: #3f0e40;
+  width: 10rem;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+  /* padding: 0 10px; */
+}
+.chat-sidebar_item {
+  color: #aaa;
+  text-align: center;
+  font-size: 0.8em;
+  cursor: pointer;
+  transition: all 0.5s;
+  border: 1px solid transparent;
+}
+
+.chat-sidebar_item:hover {
+  color: #eee;
+  border: 1px solid #eee;
+}
+
+.chat-sidebar_item:first-child {
+  margin-top: 100px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.content-message {
+}
+
+.content-message_item {
+  color: #222;
+  text-align: left;
+  font-size: 0.5em;
+}
+
+.btn {
+  padding: 0.5rem 0.8rem;
+  text-transform: capitalize;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 0.5px solid #666;
+  font-size: 0.5em;
+  font-weight: 500;
 }
