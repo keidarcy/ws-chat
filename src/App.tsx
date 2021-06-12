@@ -2,7 +2,9 @@ import React, { useCallback, useEffect, useRef, useState } from 'react';
 import './App.css';
 import { Button } from './components/Button';
 
-const URL = import.meta.env.WS_URL;
+const URL = 'wss://ai4mqacdw5.execute-api.ap-northeast-1.amazonaws.com/production';
+
+console.log(import.meta.env.MODE);
 
 function App() {
   const [isConnected, setIsConnected] = useState(false);
